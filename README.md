@@ -101,7 +101,7 @@ O arquivo `appsettings.Development.json` contém as credenciais do banco e **nã
 appsettings.Development.json
 ```
 
-## 👨‍💻 Autor
+##  Autor
 
 Desenvolvido por **Brenno Gomes**
 
