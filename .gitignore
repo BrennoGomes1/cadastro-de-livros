@@ -1,0 +1,10 @@
+# Ignorar senhas e configurações locais
+appsettings.Development.json
+
+# Ignorar arquivos de build
+bin/
+obj/
+
+# Ignorar arquivos do Visual Studio
+.vs/
+*.user

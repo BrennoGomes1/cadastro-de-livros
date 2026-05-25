@@ -1,0 +1,27 @@
+﻿@model CadastroDeLivros.Models.Livro
+
+@{
+    ViewData["Title"] = "Excluir Livro";
+}
+
+<h2>🗑️ Excluir Livro</h2>
+
+<p class="text-danger">Tem certeza que deseja excluir este livro?</p>
+
+<div class="card" style="max-width: 400px;">
+    <div class="card-body">
+        <p><strong>Título:</strong> @Model.Titulo</p>
+        <p><strong>Autor:</strong> @Model.Autor</p>
+        <p><strong>Ano:</strong> @Model.AnoPublicacao</p>
+        <p><strong>Gênero:</strong> @Model.Genero</p>
+        <p><strong>Preço:</strong> @Model.Preco.ToString("C")</p>
+    </div>
+</div>
+
+<br />
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

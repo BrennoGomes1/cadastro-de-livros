@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="Cadastro de livros/Cadastro de livros.csproj" />
+</Solution>

@@ -1,0 +1,43 @@
+﻿@model CadastroDeLivros.Models.Livro
+
+@{
+    ViewData["Title"] = "Novo Livro";
+}
+
+<h2>➕ Novo Livro</h2>
+
+<form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Titulo" class="form-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Autor" class="form-label"></label>
+        <input asp-for="Autor" class="form-control" />
+        <span asp-validation-for="Autor" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AnoPublicacao" class="form-label"></label>
+        <input asp-for="AnoPublicacao" class="form-control" />
+        <span asp-validation-for="AnoPublicacao" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Genero" class="form-label"></label>
+        <input asp-for="Genero" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Preco" class="form-label"></label>
+        <input asp-for="Preco" class="form-control" />
+        <span asp-validation-for="Preco" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
