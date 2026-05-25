@@ -8,3 +8,6 @@ obj/
 # Ignorar arquivos do Visual Studio
 .vs/
 *.user
+
+# Forçar uma atualização de teste no commit
+# linha_aleatoria_de_teste/
