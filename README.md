@@ -1,4 +1,4 @@
-#  Cadastro de Livros
+#  Sistema de Cadastro de Livros
 
 Sistema web de cadastro de livros desenvolvido com **ASP.NET Core MVC**, **Entity Framework Core** e **PostgreSQL**.
 
